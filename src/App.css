@@ -270,3 +270,30 @@
 .courceDecription ul li {
   list-style: none;
 }
+
+.eventTop-image{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20rem;
+  width: 100%;
+}
+
+.contactList li{
+  list-style: none;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.contact-submitBtn{
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 10px 30px;
+  cursor: pointer;
+  background-color: #3786cf;
+  transition: background-color 0.3s ease;
+}
+
+.contact-submitBtn:hover{background-color: #0a4a85;}

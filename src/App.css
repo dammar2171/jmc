@@ -1,0 +1,244 @@
+.sponsoredSection img {
+  width: 464px;
+  height: 348px;
+  object-fit: cover;
+}
+
+#sponserText {
+  font-size: 16px;
+}
+
+.sponsoredSection h1 {
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+}
+
+#sponserDescription {
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.sponsoredSection button {
+  font-size: 16px;
+  margin-left: 40%;
+  padding: 10px 24px 10px 24px;
+  border-radius: 20px;
+  background-color: rgb(1, 60, 1);
+  color: white;
+}
+
+.sponsoredSection button:hover {
+  background-color: #01230e;
+}
+
+.card-list {
+  display: flex;
+  margin-left: 5.5rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+  /* Adjust spacing as needed */
+}
+
+.custom-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.custom-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(42, 43, 43, 0.3);
+  /* Neon glow */
+  cursor: pointer;
+}
+
+.custom-card a {
+  text-decoration: none;
+  color: black;
+}
+
+#aboutClz-btn {
+  border: 1px solid black;
+  padding: 10px 24px;
+  border-radius: 8px;
+  background-color: #3786cf;
+  color: white;
+}
+
+#aboutClz-btn:hover {
+  background-color: #0a4a85;
+}
+
+.custom-whyjmc-card:hover {
+  background-color: rgba(224, 217, 217, 0.897) !important;
+}
+
+.principle-image-container {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.principle-image-container img {
+  box-shadow: 8px 8px 15px rgba(34, 120, 196, 0.5);
+
+  transition: transform 0.3s ease;
+}
+
+.principle-image-container img:hover {
+  transform: scale(1.2);
+}
+
+/*  enquiry css */
+.main-enquiry-container {
+  position: relative;
+  overflow: hidden;
+  /* ensures blur doesn’t spill out */
+}
+
+.main-enquiry-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* fills parent */
+  background-image: url("inquiry.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(3px);
+  /* adjust blur strength */
+  z-index: -1;
+  /* keeps it behind content */
+}
+
+.main-enquiry-container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  /* grey/black tint */
+  z-index: -1;
+}
+
+.main-enquiry-container h1 {
+  font-size: 62px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  color: #FFFF;
+}
+
+.main-enquiry-container h1 .enquiryHeading-enquiry {
+  font-weight: 700;
+}
+
+#download-brochure,
+#enquiry-form-btn {
+  border: 1px solid rgb(5, 5, 5);
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+#download-brochure {
+  background-color: #3786cf;
+  color: white;
+}
+
+#enquiry-form-btn {
+  color: black;
+  background-color: white;
+  border: 1px solid rgb(5, 5, 5);
+  width: 19rem;
+}
+
+#download-brochure:hover {
+  background-color: #0a4a85;
+}
+
+#enquiry-form-btn:hover {
+  background-color: rgba(237, 233, 233, 0.977);
+}
+
+/* resources */
+.download-options h2 {
+  margin-top: 9rem;
+}
+
+.download-options p {
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.resource-btnGroup {
+  margin-top: 2rem;
+}
+
+.resource-btnGroup button {
+  color: black;
+  font-size: 18px;
+  border-radius: 12px;
+  border: 1px solid black;
+  padding: 12px 24px;
+  cursor: pointer;
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+
+.resource-btnGroup button:hover {
+  background-color: rgba(237, 233, 233, 0.977);
+}
+
+#admission-formBtn {
+  background-color: #3786cf;
+  color: white;
+}
+
+#admission-formBtn:hover {
+  background-color: #0a4a85;
+}
+
+/*mission vision values--about page */
+#mission-vision-valueImg {
+  position: relative;
+  /* make it a positioning context */
+  overflow: hidden;
+  /* keep blur inside */
+}
+
+#mission-vision-valueImg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* fill the container */
+  background-image: url("./assets/library.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(1px);
+  /* adjust the blur amount */
+  z-index: -1;
+  /* place behind the content */
+}
+
+#fixed-image {
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+#consultationBtn {
+  float: right;
+  color: white;
+  font-size: 18px;
+  border-radius: 12px;
+  border: 1px solid black;
+  padding: 12px 24px;
+  cursor: pointer;
+  background-color: #3786cf;
+  transition: background-color 0.3s ease;
+}
+
+#consultationBtn:hover {
+  background-color: #0a4a85;
+}

@@ -1,0 +1,46 @@
+import principle from "../assets/principleSir.jpg";
+const MessagePrinciple = () => {
+  return (
+    <div className="container-fluid py-5">
+      <div className="container">
+        <div className="row">
+          <div className="col-6">
+            <h3>Message From Campus Chief</h3>
+            <p className="fs-6 text-start">
+              Welcome to Janjyoti Multiple Campus, where tradition meets
+              innovation and learning becomes a lifelong journey. As Campus
+              Chief, I am proud to lead an institution that is deeply committed
+              to academic excellence, personal growth, and community engagement.
+              At Janjyoti, we believe education is not just about acquiring
+              degrees—it's about shaping character, nurturing creativity, and
+              preparing students to thrive in a rapidly changing world. Our
+              dedicated faculty, modern facilities, and student-centered
+              approach ensure that every learner receives the support and
+              inspiration they need to succeed. Whether you're pursuing science,
+              management, humanities, or technology, you'll find a vibrant
+              environment that encourages curiosity, collaboration, and
+              leadership. We are more than a campus—we are a community. A place
+              where ideas are born, friendships are forged, and futures are
+              built. I invite you to explore, engage, and excel with us. Let
+              Janjyoti be the light that guides your academic and personal
+              journey. Warm regards,
+              <br /> <b>Prakash Joshi</b> <br />
+              Campus Chief <br />
+              <i>Janjyoti Multiple Campus</i>
+            </p>
+          </div>
+          <div className="col-6 principle-image-container">
+            <img
+              className="ms-5 rounded "
+              src={principle}
+              alt="principle-image"
+              height={420}
+              width={500}
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+export default MessagePrinciple;

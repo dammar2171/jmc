@@ -1,0 +1,16 @@
+
+.costumColllegeIntro{
+  background-image: url("../assets/jmcPic.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 30rem;
+  width: 100%;
+}
+.jmcHeading{
+  margin-top: 10rem;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+}

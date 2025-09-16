@@ -5,10 +5,10 @@ const AboutCollegeDescription = () => {
       <div className="container">
         <div className="row sponsoredSection justify-content-center align-items-center">
           <div className="col-6">
-            <img src={image} className="shadow-lg rounded"/>
+            <img src={image} className="shadow-lg rounded" />
           </div>
           <div className="col-6">
-            <h3>About Janjyoti Multiple Campus</h3>
+            <h3 style={{ color: "#3786cf" }} className="text-center">About Janjyoti Multiple Campus</h3>
             <p className="lead fs-6">
               Janajyoti Multiple Campus, located in Bhimdattnagar-18, Bhasi,
               Mahendranagar, Kanchanpur, is a prominent academic institution in

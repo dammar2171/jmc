@@ -242,3 +242,31 @@
 #consultationBtn:hover {
   background-color: #0a4a85;
 }
+
+.cource-top-bar img{
+   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 25rem;
+  width: 100%;
+}
+.cource-top-bar .cource-overlay{
+  background-color: #3786cf;
+  color: white;
+  font-size: 16px;
+   position: absolute;
+  bottom: 15%;
+  left: 6%;
+  max-width: 456px;
+  height: 154px;
+  border-radius: 0.25rem;
+}
+
+/* tabs style in cource */
+.tab-content ul li {
+  list-style: none;
+}
+
+.courceDecription ul li {
+  list-style: none;
+}

@@ -11,7 +11,9 @@ const AboutCollege = () => {
             <span className="d-flex gap-2 justify-content-center ">
               <p id="sponserText">Janjyoti multiple campus</p>
             </span>
-            <h3>Excellence Meets Innovation in Education</h3>
+            <h3 style={{ color: "#3786cf" }}>
+              Excellence Meets Innovation in Education
+            </h3>
             <p id="sponserDescription">
               Janjyoti Multiple Campus, established in 2001 in Bhimdattnagar,
               Kanchanpur, is a vibrant academic institution affiliated with

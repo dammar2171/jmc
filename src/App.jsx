@@ -10,8 +10,6 @@ import Bbs from "./pages/Bbs";
 import Bsw from "./pages/Bsw";
 import Event from "./pages/Event";
 import Contact from "./pages/Contact";
-import Registration from "./pages/Registration";
-
 function App() {
   return (
     <Router>
@@ -25,7 +23,6 @@ function App() {
         <Route path="/courses/bsw" element={<Bsw />} />
         <Route path="/event" element={<Event />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/registration" element={<Registration />} />
       </Routes>
     </Router>
   );

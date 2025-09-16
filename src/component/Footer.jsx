@@ -1,6 +1,8 @@
 import logo from "../assets/logo.jpg";
 import style from "../css/Footer.module.css";
 import { BiChevronRight } from "react-icons/bi";
+import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
   FaFacebook,
   FaInstagram,
@@ -9,19 +11,31 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa";
 const Footer = () => {
+  const navigate = useNavigate();
+  const goBca = () => {
+    navigate("/courses/bca");
+  };
+  const goBbs = () => {
+    navigate("/courses/bbs");
+  };
+  const goBsw = () => {
+    navigate("/courses/bsw");
+  };
   return (
     <>
       <footer className={`container-fluid py-5  ${style.footerMainContainer}`}>
         <div className="container">
           <div className="row">
             <div className="col-3 d-flex mt-4">
-              <img
-                className="rounded-circle shadow-lg"
-                src={logo}
-                width={100}
-                height={100}
-                alt="logo"
-              />
+              <Link to={"/"}>
+                <img
+                  className="rounded-circle shadow-lg"
+                  src={logo}
+                  width={100}
+                  height={100}
+                  alt="logo"
+                />
+              </Link>
               <h5 className="mt-3 ps-2" style={{ color: "#dad2d2ff" }}>
                 Janjyoti <br /> Multiple <br />
                 Campus
@@ -31,34 +45,34 @@ const Footer = () => {
               <h5 className="ms-4 text-white">Quick Links</h5>
               <ul>
                 <li>
-                  <a href="#">
+                  <Link to={"/"}>
                     <BiChevronRight />
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link to={"/about"}>
                     <BiChevronRight />
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link to={"/courses/bca"}>
                     <BiChevronRight />
                     Course
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link to={"/event"}>
                     <BiChevronRight />
                     Events
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link to={"/contact"}>
                     <BiChevronRight />
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -66,25 +80,20 @@ const Footer = () => {
               <h5 className="ms-4 text-white">Courses</h5>
               <ul>
                 <li>
-                  <a href="#">
+                  <a onClick={goBca} href="#">
                     <BiChevronRight />
                     Bachelor in Computer Application
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a onClick={goBbs} href="#">
                     <BiChevronRight />
                     Bachelor in Business Studies
                   </a>
                 </li>
+
                 <li>
-                  <a href="#">
-                    <BiChevronRight />
-                    Master's in Business Studies
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
+                  <a onClick={goBsw} href="#">
                     <BiChevronRight />
                     Bachelor in Social Work
                   </a>
@@ -101,7 +110,7 @@ const Footer = () => {
               <h5 className="ms-4 text-white">Social Media Links</h5>
               <ul>
                 <li>
-                  <a href="#">
+                  <a href="https://www.facebook.com/jmc2058">
                     <FaFacebook lassName="me-3" />
                     Facebook
                   </a>
@@ -140,19 +149,19 @@ const Footer = () => {
           <h6 className="text-center">
             Copyright © 2025{" "}
             <a
-              style={{ color: "#dad2d2ff", textDecoration:"none"}}
+              style={{ color: "#dad2d2ff", textDecoration: "none" }}
               href="https://www.facebook.com/jmc2058"
             >
               Janjyoti Multiple Campus
             </a>
             . Designed by{" "}
             <a
-              style={{ color: "#dad2d2ff", textDecoration:"none" }}
+              style={{ color: "#dad2d2ff", textDecoration: "none" }}
               href="https://porfolio-website-d11psk0ih-dammar2171s-projects.vercel.app/"
             >
               Dammar Bhatt ~
             </a>
-              All rights reserved.
+            All rights reserved.
           </h6>
         </div>
       </div>

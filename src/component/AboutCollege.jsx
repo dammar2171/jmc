@@ -1,5 +1,10 @@
 import image from "../assets/jmcPic.jpg";
+import { useNavigate } from "react-router-dom";
 const AboutCollege = () => {
+  const navigate = useNavigate();
+  const gotoAbout = () => {
+    navigate("/about");
+  };
   return (
     <section className="container-fluid py-5">
       <div className="container">
@@ -19,7 +24,9 @@ const AboutCollege = () => {
               Kanchanpur, is a vibrant academic institution affiliated with
               Tribhuvan University and the National Examinations Board.
             </p>
-            <button id="aboutClz-btn">Learn More</button>
+            <button onClick={gotoAbout} id="aboutClz-btn">
+              Learn More
+            </button>
           </div>
         </div>
       </div>

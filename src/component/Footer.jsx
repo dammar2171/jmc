@@ -23,7 +23,7 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             {/* --- Desktop Logo + Text --- */}
-            <div className="col-3 d-none d-md-flex align-items-center mt-4">
+            <div className="col-3 d-none d-md-flex align-items-center ">
               <Link to={"/"}>
                 <img
                   className="rounded-circle shadow-lg"

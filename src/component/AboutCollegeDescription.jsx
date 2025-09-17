@@ -1,15 +1,30 @@
 import image from "../assets/aboutImage.jpg";
+
 const AboutCollegeDescription = () => {
   return (
     <section className="container-fluid py-5">
       <div className="container">
+        {/* 
+          ✅ Bootstrap classes handle responsiveness:
+          - col-lg-6: side-by-side only on large screens
+          - col-md-12: full width on tablet/mobile
+        */}
         <div className="row sponsoredSection justify-content-center align-items-center">
-          <div className="col-6">
-            <img src={image} className="shadow-lg rounded" />
+          <div className="col-lg-6 col-md-12 mb-4 mb-lg-0 text-center">
+            <img
+              src={image}
+              className="shadow-lg rounded img-fluid"
+              alt="About Janjyoti Multiple Campus"
+            />
           </div>
-          <div className="col-6">
-            <h3 style={{ color: "#3786cf" }} className="text-center">About Janjyoti Multiple Campus</h3>
-            <p className="lead fs-6">
+          <div className="col-lg-6 col-md-12">
+            <h3
+              style={{ color: "#3786cf" }}
+              className="text-center text-lg-start mb-3"
+            >
+              About Janjyoti Multiple Campus
+            </h3>
+            <p className="lead fs-6 text-justify">
               Janajyoti Multiple Campus, located in Bhimdattnagar-18, Bhasi,
               Mahendranagar, Kanchanpur, is a prominent academic institution in
               Nepal’s Far-Western region. Established in 2001 AD (2058 BS), it
@@ -39,4 +54,5 @@ const AboutCollegeDescription = () => {
     </section>
   );
 };
+
 export default AboutCollegeDescription;

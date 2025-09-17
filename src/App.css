@@ -230,6 +230,7 @@
 #consultationBtn {
   float: right;
   color: white;
+  width: 50%;
   font-size: 18px;
   border-radius: 12px;
   border: 1px solid black;
@@ -298,3 +299,105 @@
 
 .contact-submitBtn:hover{background-color: #0a4a85;}
 
+
+@media (max-width: 767px) {
+  .principle-image-container img {
+    max-width: 90%; 
+    height: auto;
+  }
+
+  .fs-6 {
+    font-size: 0.95rem; 
+    line-height: 1.4;
+  }
+
+  .text-start {
+    text-align: center; 
+  }
+
+  #download-brochure {
+    display: block;
+    margin: 0 auto;
+  }
+
+  #enquiry-form-btn {
+    display: block;
+    margin: 1rem auto 0 auto;
+  }
+
+  .main-enquiry-container h1 {
+    font-size: 1.8rem; 
+  }
+
+  .main-enquiry-container p {
+    font-size: 0.95rem; 
+    line-height: 1.4;
+  }
+
+  form {
+    width: 100%;
+    padding: 1.5rem !important;
+  }
+  #enquiry-form-btn{
+    max-width: 250px;
+  }
+
+  .download-options h2 {
+    font-size: 1.5rem; 
+  }
+
+  .download-options p {
+    font-size: 0.95rem; 
+  }
+
+  .resource-btnGroup {
+    flex-direction: column !important; 
+    align-items: center;
+  }
+
+  .resource-btnGroup button {
+    width: 80%; 
+    margin-bottom: 0.5rem;
+  }
+
+  .resources-image {
+    max-width: 80%; 
+    height: auto;
+  }
+
+  .cource-top-bar img {
+    width: 100%;
+    height: auto;       
+    object-fit: cover;
+  }
+  .cource-overlay{
+    display: none;
+    margin: -30px;
+  }
+  .courceDecription{
+    margin-top: -90px !important;
+  }
+   .page-top-container .eventTop-image {
+    width: 100%;        
+    height: auto;       
+    object-fit: cover;  
+  }
+   .contact-form-container .contactList li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .contact-form-container h1 {
+    font-size: 28px; 
+  }
+
+  .contact-form-container form textarea {
+    min-height: 150px;
+  }
+
+  .contact-submitBtn {
+    width: 100%;      
+  }
+  #consultationBtn{
+    width: 100%;
+  }
+}

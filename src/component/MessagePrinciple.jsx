@@ -3,8 +3,9 @@ const MessagePrinciple = () => {
   return (
     <div className="container-fluid py-5">
       <div className="container">
-        <div className="row">
-          <div className="col-6">
+        <div className="row align-items-center flex-column flex-md-row">
+          {/* Text Column */}
+          <div className="col-12 col-md-6 mb-4 mb-md-0">
             <h3>Message From Campus Chief</h3>
             <p className="fs-6 text-start">
               Welcome to Janjyoti Multiple Campus, where tradition meets
@@ -29,13 +30,14 @@ const MessagePrinciple = () => {
               <i>Janjyoti Multiple Campus</i>
             </p>
           </div>
-          <div className="col-6 principle-image-container">
+
+          {/* Image Column */}
+          <div className="col-12 col-md-6 d-flex justify-content-center principle-image-container">
             <img
-              className="ms-5 rounded "
               src={principle}
               alt="principle-image"
-              height={420}
-              width={500}
+              className="img-fluid rounded"
+              style={{ maxHeight: "420px", width: "100%", objectFit: "cover" }}
             />
           </div>
         </div>
@@ -43,4 +45,5 @@ const MessagePrinciple = () => {
     </div>
   );
 };
+
 export default MessagePrinciple;

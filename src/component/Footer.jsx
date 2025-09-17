@@ -10,23 +10,20 @@ import {
   FaWhatsapp,
   FaLinkedinIn,
 } from "react-icons/fa";
+
 const Footer = () => {
   const navigate = useNavigate();
-  const goBca = () => {
-    navigate("/courses/bca");
-  };
-  const goBbs = () => {
-    navigate("/courses/bbs");
-  };
-  const goBsw = () => {
-    navigate("/courses/bsw");
-  };
+  const goBca = () => navigate("/courses/bca");
+  const goBbs = () => navigate("/courses/bbs");
+  const goBsw = () => navigate("/courses/bsw");
+
   return (
     <>
       <footer className={`container-fluid py-5  ${style.footerMainContainer}`}>
         <div className="container">
           <div className="row">
-            <div className="col-3 d-flex mt-4">
+            {/* --- Desktop Logo + Text --- */}
+            <div className="col-3 d-none d-md-flex align-items-center mt-4">
               <Link to={"/"}>
                 <img
                   className="rounded-circle shadow-lg"
@@ -37,106 +34,112 @@ const Footer = () => {
                 />
               </Link>
               <h5 className="mt-3 ps-2" style={{ color: "#dad2d2ff" }}>
-                Janjyoti <br /> Multiple <br />
-                Campus
+                Janjyoti <br /> Multiple <br /> Campus
               </h5>
             </div>
-            <div className="col-2">
+
+            {/* --- Mobile & Tablet Logo + Text Centered --- */}
+            <div className="col-12 d-flex d-md-none justify-content-center align-items-center mb-4 ">
+              <Link to={"/"}>
+                <img
+                  className="rounded-circle shadow-lg"
+                  src={logo}
+                  width={80}
+                  height={80}
+                  alt="logo"
+                />
+              </Link>
+              <h5 className="ms-3 text-center" style={{ color: "#dad2d2ff" }}>
+                Janjyoti <br /> Multiple <br /> Campus
+              </h5>
+            </div>
+
+            {/* --- Quick Links --- */}
+            <div className="col-2 d-none d-md-block">
               <h5 className="ms-4 text-white">Quick Links</h5>
               <ul>
                 <li>
                   <Link to={"/"}>
-                    <BiChevronRight />
-                    Home
+                    <BiChevronRight /> Home
                   </Link>
                 </li>
                 <li>
                   <Link to={"/about"}>
-                    <BiChevronRight />
-                    About
+                    <BiChevronRight /> About
                   </Link>
                 </li>
                 <li>
                   <Link to={"/courses/bca"}>
-                    <BiChevronRight />
-                    Course
+                    <BiChevronRight /> Course
                   </Link>
                 </li>
                 <li>
                   <Link to={"/event"}>
-                    <BiChevronRight />
-                    Events
+                    <BiChevronRight /> Events
                   </Link>
                 </li>
                 <li>
                   <Link to={"/contact"}>
-                    <BiChevronRight />
-                    Contact
+                    <BiChevronRight /> Contact
                   </Link>
                 </li>
               </ul>
             </div>
-            <div className="col-4">
+
+            {/* --- Courses --- */}
+            <div className="col-4 d-none d-md-block">
               <h5 className="ms-4 text-white">Courses</h5>
               <ul>
                 <li>
                   <a onClick={goBca} href="#">
-                    <BiChevronRight />
-                    Bachelor in Computer Application
+                    <BiChevronRight /> Bachelor in Computer Application
                   </a>
                 </li>
                 <li>
                   <a onClick={goBbs} href="#">
-                    <BiChevronRight />
-                    Bachelor in Business Studies
+                    <BiChevronRight /> Bachelor in Business Studies
                   </a>
                 </li>
-
                 <li>
                   <a onClick={goBsw} href="#">
-                    <BiChevronRight />
-                    Bachelor in Social Work
+                    <BiChevronRight /> Bachelor in Social Work
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <BiChevronRight />
-                    +2
+                    <BiChevronRight /> +2
                   </a>
                 </li>
               </ul>
             </div>
-            <div className="col-3">
+
+            {/* --- Social Media Links --- */}
+            <div className="col-3 d-none d-md-block">
               <h5 className="ms-4 text-white">Social Media Links</h5>
               <ul>
                 <li>
                   <a href="https://www.facebook.com/jmc2058">
-                    <FaFacebook lassName="me-3" />
-                    Facebook
+                    <FaFacebook className="me-3" /> Facebook
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <FaInstagram lassName="me-2" />
-                    Instagram
+                    <FaInstagram className="me-2" /> Instagram
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <FaTwitter lassName="me-2" />
-                    Twitter
+                    <FaTwitter className="me-2" /> Twitter
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <FaWhatsapp lassName="me-2" />
-                    Whatsapp
+                    <FaWhatsapp className="me-2" /> Whatsapp
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <FaLinkedinIn className="me-2" />
-                    LinkedIn
+                    <FaLinkedinIn className="me-2" /> LinkedIn
                   </a>
                 </li>
               </ul>
@@ -144,9 +147,11 @@ const Footer = () => {
           </div>
         </div>
       </footer>
+
+      {/* --- Bottom Footer --- */}
       <div className={`container-fluid py-3 ${style.costumBottomFooter}`}>
-        <div className="container ">
-          <h6 className="text-center">
+        <div className="container text-center">
+          <h6>
             Copyright © 2025{" "}
             <a
               style={{ color: "#dad2d2ff", textDecoration: "none" }}
@@ -168,4 +173,5 @@ const Footer = () => {
     </>
   );
 };
+
 export default Footer;

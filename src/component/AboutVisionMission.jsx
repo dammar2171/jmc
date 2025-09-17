@@ -4,9 +4,15 @@ const AboutVisionMission = () => {
       <div className="container-fluid py-5" id="mission-vision-valueImg">
         <div className="container py-4">
           <div className="row">
-            <div className="col-4 px-2">
+            {/* 
+              ✅ Responsive grid:
+              - col-lg-4: three columns on large screens (desktop)
+              - col-md-6: two columns on medium screens (tablet)
+              - col-12 : full width on small screens (mobile)
+            */}
+            <div className="col-lg-4 col-md-6 col-12 px-2 mb-4">
               <div
-                className="vision p-4"
+                className="vision p-4 h-100"
                 style={{
                   backgroundColor: "#3786cf",
                   opacity: "0.8",
@@ -14,16 +20,17 @@ const AboutVisionMission = () => {
                 }}
               >
                 <h1 className="text-white">VISION</h1>
-                <p className="text-white ">
+                <p className="text-white">
                   Empower students through quality education, fostering
                   innovation, critical thinking, and social responsibility for
                   lifelong personal and professional growth.
                 </p>
               </div>
             </div>
-            <div className="col-4 px-2">
+
+            <div className="col-lg-4 col-md-6 col-12 px-2 mb-4">
               <div
-                className="mission p-4"
+                className="mission p-4 h-100"
                 style={{
                   backgroundColor: "#3786cf",
                   opacity: "0.8",
@@ -38,9 +45,10 @@ const AboutVisionMission = () => {
                 </p>
               </div>
             </div>
-            <div className="col-4 px-2">
+
+            <div className="col-lg-4 col-md-6 col-12 px-2 mb-4">
               <div
-                className="values p-4"
+                className="values p-4 h-100"
                 style={{
                   backgroundColor: "#3786cf",
                   opacity: "0.8",
@@ -61,4 +69,5 @@ const AboutVisionMission = () => {
     </>
   );
 };
+
 export default AboutVisionMission;

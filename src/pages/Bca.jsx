@@ -1,5 +1,5 @@
 import CourceTopBar from "../component/CourceTopBar";
-import bcaImg from "../assets/BCA-banner.jpg";
+import bcaImg from "../assets/bca-banner.png";
 import CourceDescription from "../component/CourceDescription";
 import ConsultationBanner from "../component/ConsultationBanner";
 import Footer from "../component/Footer";

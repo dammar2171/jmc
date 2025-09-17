@@ -6,16 +6,19 @@ const CourceOffer = () => {
   const courceData = [
     {
       id: 1,
+      link: "/courses/bca",
       image: bca,
       title: "Bachelor in Computer Application (BCA)",
     },
     {
       id: 2,
+      link: "/courses/bbs",
       image: bbs,
       title: "Bachelor in Business Studies (BBS)",
     },
     {
       id: 3,
+      link: "/courses/bsw",
       image: bsw,
       title: "Bachelor in Social Work (BSW)",
     },

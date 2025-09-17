@@ -1,5 +1,5 @@
 import CourceTopBar from "../component/CourceTopBar";
-import bbsImg from "../assets/bbs-banner.jpeg";
+import bbsImg from "../assets/bbs-banner.png";
 import CourceDescription from "../component/CourceDescription";
 import ConsultationBanner from "../component/ConsultationBanner";
 import Footer from "../component/Footer";

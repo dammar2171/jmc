@@ -1,5 +1,5 @@
 import CourceTopBar from "../component/CourceTopBar";
-import bswImg from "../assets/bsw-banner.jpg";
+import bswImg from "../assets/bsw-banner.png";
 import CourceDescription from "../component/CourceDescription";
 import ConsultationBanner from "../component/ConsultationBanner";
 import Footer from "../component/Footer";

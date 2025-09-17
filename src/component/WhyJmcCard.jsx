@@ -1,7 +1,7 @@
 const WhyJmcCard = ({ item }) => {
   return (
     <div
-      className="p-4 pb-5 pt-4 d-flex flex-column bg-white shadow-lg custom-whyjmc-card"
+      className="p-4 pb-4 pt-5 d-flex flex-column bg-white shadow-lg custom-whyjmc-card"
       style={{
         width: "262px",
         height: "250px",

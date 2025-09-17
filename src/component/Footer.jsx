@@ -22,7 +22,6 @@ const Footer = () => {
       <footer className={`container-fluid py-5  ${style.footerMainContainer}`}>
         <div className="container">
           <div className="row">
-            {/* --- Desktop Logo + Text --- */}
             <div className="col-3 d-none d-md-flex align-items-center ">
               <Link to={"/"}>
                 <img
@@ -38,7 +37,6 @@ const Footer = () => {
               </h5>
             </div>
 
-            {/* --- Mobile & Tablet Logo + Text Centered --- */}
             <div className="col-12 d-flex d-md-none justify-content-center align-items-center mb-4 ">
               <Link to={"/"}>
                 <img
@@ -54,7 +52,6 @@ const Footer = () => {
               </h5>
             </div>
 
-            {/* --- Quick Links --- */}
             <div className="col-2 d-none d-md-block">
               <h5 className="ms-4 text-white">Quick Links</h5>
               <ul>
@@ -86,7 +83,6 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* --- Courses --- */}
             <div className="col-4 d-none d-md-block">
               <h5 className="ms-4 text-white">Courses</h5>
               <ul>
@@ -113,7 +109,6 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* --- Social Media Links --- */}
             <div className="col-3 d-none d-md-block">
               <h5 className="ms-4 text-white">Social Media Links</h5>
               <ul>
@@ -148,7 +143,6 @@ const Footer = () => {
         </div>
       </footer>
 
-      {/* --- Bottom Footer --- */}
       <div className={`container-fluid py-3 ${style.costumBottomFooter}`}>
         <div className="container text-center">
           <h6>

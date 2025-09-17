@@ -4,7 +4,7 @@ const MessagePrinciple = () => {
     <div className="container-fluid py-5">
       <div className="container">
         <div className="row align-items-center flex-column flex-md-row">
-          {/* Text Column */}
+         
           <div className="col-12 col-md-6 mb-4 mb-md-0">
             <h3>Message From Campus Chief</h3>
             <p className="fs-6 text-start">
@@ -31,7 +31,7 @@ const MessagePrinciple = () => {
             </p>
           </div>
 
-          {/* Image Column */}
+          
           <div className="col-12 col-md-6 d-flex justify-content-center principle-image-container">
             <img
               src={principle}

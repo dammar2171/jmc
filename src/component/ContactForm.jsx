@@ -7,7 +7,6 @@ const ContactForm = () => {
     <div className="container-fluid py-5 contact-form-container">
       <div className="container">
         <div className="row">
-          {/* Left: Address */}
           <div className="col-md-5 col-12 mb-4">
             <div className="d-flex">
               <h5 style={{ fontSize: "20px", color: "#3786cf" }}>
@@ -27,8 +26,6 @@ const ContactForm = () => {
               </li>
             </ul>
           </div>
-
-          {/* Right: Form */}
           <div className="col-md-7 col-12">
             <div className="d-flex">
               <h5 style={{ fontSize: "20px", color: "#3786cf" }}>

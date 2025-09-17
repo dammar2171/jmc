@@ -3,7 +3,7 @@ const Enquiry = () => {
     <div className="container-fluid main-enquiry-container py-5">
       <div className="container">
         <div className="row flex-column flex-md-row">
-          {/* Left Text Column */}
+        
           <div className="col-12 col-md-8 mb-4 mb-md-0 text-center text-md-start">
             <h1 className="pt-5">
               Send Your <span className="enquiryHeading-enquiry">Enquiry</span>
@@ -17,7 +17,7 @@ const Enquiry = () => {
             </button>
           </div>
 
-          {/* Right Form Column */}
+         
           <div className="col-12 col-md-4">
             <form
               className="bg-white text-black px-4 py-4 rounded mx-auto"

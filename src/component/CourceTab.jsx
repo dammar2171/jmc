@@ -31,7 +31,7 @@ const CourceTab = () => {
             </ul>
 
             <div className="tab-content" id="myTabContent">
-              {/* 1st Semester */}
+            
               <div
                 className="tab-pane fade show active"
                 id="sem1"
@@ -58,8 +58,7 @@ const CourceTab = () => {
                 </ul>
               </div>
 
-              {/* 2nd Semester */}
-              <div
+                         <div
                 className="tab-pane fade"
                 id="sem2"
                 role="tabpanel"
@@ -89,7 +88,7 @@ const CourceTab = () => {
                 </ul>
               </div>
 
-              {/* 3rd Semester */}
+         
               <div
                 className="tab-pane fade"
                 id="sem3"
@@ -121,7 +120,7 @@ const CourceTab = () => {
                 </ul>
               </div>
 
-              {/* 4th Semester */}
+           
               <div
                 className="tab-pane fade"
                 id="sem4"
@@ -153,7 +152,7 @@ const CourceTab = () => {
                 </ul>
               </div>
 
-              {/* 5th Semester */}
+           
               <div
                 className="tab-pane fade"
                 id="sem5"
@@ -185,7 +184,7 @@ const CourceTab = () => {
                 </ul>
               </div>
 
-              {/* 6th Semester */}
+           
               <div
                 className="tab-pane fade"
                 id="sem6"
@@ -217,7 +216,7 @@ const CourceTab = () => {
                 </ul>
               </div>
 
-              {/* 7th Semester */}
+          
               <div
                 className="tab-pane fade"
                 id="sem7"
@@ -249,7 +248,7 @@ const CourceTab = () => {
                 </ul>
               </div>
 
-              {/* 8th Semester */}
+             
               <div
                 className="tab-pane fade"
                 id="sem8"

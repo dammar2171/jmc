@@ -149,7 +149,7 @@
   color: black;
   background-color: white;
   border: 1px solid rgb(5, 5, 5);
-  width: 19rem;
+  width: 100%;
 }
 
 #download-brochure:hover {
@@ -322,7 +322,8 @@
 
   #enquiry-form-btn {
     display: block;
-    margin: 1rem auto 0 auto;
+    margin: 1rem auto 0 auto; 
+    width: 100%;
   }
 
   .main-enquiry-container h1 {
@@ -337,9 +338,6 @@
   form {
     width: 100%;
     padding: 1.5rem !important;
-  }
-  #enquiry-form-btn{
-    max-width: 250px;
   }
 
   .download-options h2 {

@@ -256,7 +256,7 @@
   color: white;
   font-size: 16px;
    position: absolute;
-  bottom: 15%;
+  bottom: 22%;
   left: 6%;
   max-width: 456px;
   height: 154px;
@@ -293,6 +293,7 @@
   border: 1px solid black;
   padding: 10px 30px;
   cursor: pointer;
+  width: 100%;
   background-color: #3786cf;
   transition: background-color 0.3s ease;
 }

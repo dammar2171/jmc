@@ -156,7 +156,7 @@ const Footer = () => {
             . Designed by{" "}
             <a
               style={{ color: "#dad2d2ff", textDecoration: "none" }}
-              href="https://porfolio-website-d11psk0ih-dammar2171s-projects.vercel.app/"
+              href="https://myportfoliov3.vercel.app/"
             >
               Dammar Bhatt ~
             </a>

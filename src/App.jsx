@@ -12,6 +12,7 @@ import Bbs from "./pages/Bbs";
 import Bsw from "./pages/Bsw";
 import Event from "./pages/Event";
 import Contact from "./pages/Contact";
+import Notice from "./pages/Notice";
 function App() {
   return (
     <Router>
@@ -24,6 +25,7 @@ function App() {
         <Route path="/courses/bbs" element={<Bbs />} />
         <Route path="/courses/bsw" element={<Bsw />} />
         <Route path="/event" element={<Event />} />
+        <Route path="/notice" element={<Notice />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>

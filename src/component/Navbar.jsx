@@ -8,13 +8,11 @@ const Navbar = () => {
 
   return (
     <>
-      {/* --- Header / Navbar --- */}
       <header
         className={`container-fluid py-2 shadow-lg sticky-top bg-white ${style.navbarContainer}`}
       >
         <nav className="container text-dark">
           <div className="row align-items-center">
-            {/* --- Logo + Campus Text --- */}
             <div className="col-7 col-lg-3 d-flex align-items-center">
               <Link to={"/"}>
                 <img
@@ -36,7 +34,6 @@ const Navbar = () => {
               </p>
             </div>
 
-            {/* --- Desktop Nav Links --- */}
             <div className="col-lg-7 d-none d-lg-block">
               <ul className={`d-flex ${style.navList}`}>
                 <li className="px-3">
@@ -93,6 +90,11 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li className="px-3">
+                  <Link to="/notice" className="text-dark text-decoration-none">
+                    Notices
+                  </Link>
+                </li>
+                <li className="px-3">
                   <Link
                     to="/contact"
                     className="text-dark text-decoration-none"
@@ -103,7 +105,6 @@ const Navbar = () => {
               </ul>
             </div>
 
-            {/* --- Desktop Registration Button --- */}
             <div className="col-lg-2 text-end d-none d-lg-block">
               <button
                 className={style.registrationButton}
@@ -114,7 +115,6 @@ const Navbar = () => {
               </button>
             </div>
 
-            {/* --- Mobile/Tablet Hamburger --- */}
             <div className="col-5 d-lg-none text-end">
               <button
                 className="btn border-0"
@@ -128,12 +128,11 @@ const Navbar = () => {
         </nav>
       </header>
 
-      {/* --- Offcanvas for Mobile/Tablet --- */}
       <div
         className={`offcanvas offcanvas-end ${showOffcanvas ? "show" : ""}`}
         style={{
-          top: 0, // aligns to top
-          height: "100%", // full height
+          top: 0,
+          height: "100%",
           visibility: showOffcanvas ? "visible" : "hidden",
           backdropFilter: "blur(10px)",
           background: "rgba(255,255,255,0.95)",
@@ -180,6 +179,11 @@ const Navbar = () => {
             <li className="mb-3">
               <Link to="/event" onClick={() => setShowOffcanvas(false)}>
                 Event and Activities
+              </Link>
+            </li>
+            <li className="mb-3">
+              <Link to="/notice" onClick={() => setShowOffcanvas(false)}>
+                Notices
               </Link>
             </li>
             <li className="mb-3">
